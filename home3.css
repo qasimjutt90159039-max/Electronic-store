@@ -1,0 +1,901 @@
+/* ==========================================================================
+   home3.css - Responsive Stylesheet for home.html
+   Breakpoints:
+   - LG (Desktop / Large Screens: min-width: 1025px)
+   - MD (Tablets: 641px - 1024px)
+   - SM (Mobile: max-width: 640px)
+   - XS (Small Mobile: max-width: 480px)
+   ========================================================================== */
+
+/* Universal Reset for this Page */
+.hero-container,
+.shop-container,
+.head-phone-container,
+.today-deal,
+.audio-vodeo-container,
+.home-appliences-container,
+.air-conditoner-container,
+.kitchen-container,
+.refrigerator-container,
+.pc-container,
+.gadget-container,
+.everyone-container,
+.top-brand-container,
+.save-containere,
+.top-footer-container,
+.subscribe-container,
+.footer-container {
+    box-sizing: border-box;
+}
+
+/* Default Desktop: Hide mobile menu toggle */
+.menu-toggle {
+    display: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   MD: TABLETS & MID SCREENS (641px to 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 641px) and (max-width: 1024px) {
+    /* Hero Section */
+    .hero-container {
+        width: 100%;
+        height: auto;
+        min-height: 440px;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    }
+
+    .shop-box {
+        width: 100%;
+        max-width: 440px;
+        margin: auto;
+        padding: 25px 20px;
+    }
+
+    /* Trust / Features Bar - 2x2 grid */
+    .logo-container {
+        width: 94%;
+        margin: 20px auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+    }
+
+    .shipping, .available, .satisfied, .secure {
+        width: calc(50% - 10px);
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* Category Photo Tiles - 4 per row or 2 per row */
+    .catigery-container,
+    .catigery-inner,
+    .photo-container {
+        width: 94%;
+        margin: 20px auto;
+        height: auto !important;
+    }
+
+    .first-row-photo,
+    .second-row-photo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .air, .audio, .gadgates, .home,
+    .kitchen, .laptop, .refri, .smart {
+        width: calc(25% - 12px);
+        height: 160px;
+        border-radius: 6px;
+    }
+
+    /* Promo Duo */
+    .shop-container {
+        width: 94%;
+        margin: 25px auto;
+        height: auto;
+    }
+
+    .shop-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        height: auto;
+    }
+
+    .watch-box, .airbuds-box {
+        width: calc(50% - 8px);
+        height: 180px;
+        border-radius: 6px;
+    }
+
+    /* Universal Product Section Layouts - 2 Cards Per Row on Tablet */
+    .today-deal,
+    .audio-vodeo-container,
+    .home-appliences-container,
+    .air-conditoner-container,
+    .kitchen-container,
+    .refrigerator-container,
+    .pc-container,
+    .gadget-container {
+        width: 94%;
+        margin: 30px auto;
+        height: auto;
+    }
+
+    .card-line-1, .card-line-2, .card-line-3,
+    .card-line-4, .card-line-5, .card-line-6,
+    .card-line-7, .card-line-8, .card-line-9 {
+        width: 100%;
+        height: auto !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .card-1, .card-2, .card-3, .card-4-mobile,
+    .card-5, .card-6, .card-7, .card-8,
+    .card-9, .card-10, .card-11-lcd, .card-12,
+    .card-home-1, .card-home2, .card-home3, .card-home4,
+    .card-conditoner1, .card-conditoner2, .card-conditoner3-ac, .card-conditoner4,
+    .card-kitchen1, .card-kitchen2, .card-kitchen3, .card-kitchen4,
+    .card-refrigerator1, .card-refrigerator2, .card-refrigerator3, .card-refrigerator4-frej,
+    .card-pc1, .card-pc2, .card-pc3, .card-pc4,
+    .card-gadget1, .card-gadget2, .card-gadget3, .card-gadget4 {
+        width: calc(50% - 10px) !important;
+        height: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .crd1-img-box, .crd2-img-box, .crd3-img-box, .crd4-img-box,
+    .crd5-img-box, .crd6-img-box, .crd7-img-box, .crd8-img-box,
+    .crd9-img-box, .crd10-img-box, .crd11-img-box, .crd12-img-box,
+    .crd-home1-img-box, .crd-home2-img-box, .crd-home3-img-box, .crd-home4-img-box,
+    .crd-conditoner1-img-box, .crd-conditoner2-img-box, .crd-conditoner3-img-box, .crd-conditoner4-img-box,
+    .crd-kitchen1-img-box, .crd-kitchen2-img-box, .crd-kitchen3-img-box, .crd-kitchen4-img-box,
+    .crd-refrigerator1-img-box, .crd-refrigerator2-img-box, .crd-refrigerator3-img-box, .crd-refrigerator4-img-box,
+    .crd-pc1-img-box, .crd-pc2-img-box, .crd-pc3-img-box, .crd-pc4-img-box,
+    .crd-gadget1-img-box, .crd-gadget2-img-box, .crd-gadget3-img-box, .crd-gadget4-img-box {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        max-height: 280px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+
+    .crd1-heading, .crd2-heading, .crd3-heading, .crd4-heading,
+    .crd5-heading, .crd6-heading, .crd7-heading, .crd8-heading,
+    .crd9-heading, .crd10-heading, .crd11-heading, .crd12-heading,
+    .crd-home1-heading, .crd-home2-heading, .crd-home3-heading, .crd-home4-heading,
+    .crd-conditoner1-heading, .crd-conditoner2-heading, .conditoner3-heading, .crd-conditoner4-heading,
+    .crd-kitchen1-heading, .crd-kitchen2-heading, .kitchen3-heading, .crd-kitchen4-heading,
+    .crd-refrigerator1-heading, .crd-refrigerator2-heading, .refrigerator3-heading, .crd-refrigerator4-heading,
+    .crd-pc1-heading, .crd-pc2-heading, .pc3-heading, .crd-pc4-heading,
+    .crd-gadget1-heading, .crd-gadget2-heading, .gadget3-heading, .crd-gadget4-heading {
+        width: 100% !important;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 10px 0 6px 0;
+        height: auto !important;
+    }
+
+    .price {
+        font-size: 15px;
+        margin: 6px 0;
+    }
+
+    /* Promo Trio on Tablet */
+    .head-phone-container {
+        width: 94%;
+        margin: 30px auto;
+        height: auto;
+    }
+
+    .head-phone-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    .headphone, .grooming, .video-games {
+        width: 100%;
+        height: 160px;
+        border-radius: 6px;
+    }
+
+    /* Section Banners */
+    .ordor-container,
+    .debit-container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .ordor-container-inner,
+    .debit-container-inner {
+        width: 94%;
+        margin: auto;
+    }
+
+    .ordor-img,
+    .debit-img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 6px;
+    }
+
+    /* Save Deal */
+    .save-containere {
+        width: 94%;
+        margin: 30px auto;
+        height: auto;
+    }
+
+    .save-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .save-txt-box, .save-img-box {
+        width: 100%;
+    }
+
+    .washing-img {
+        width: 100% !important;
+        max-width: 480px;
+        height: auto !important;
+        margin: auto;
+        border-radius: 6px;
+    }
+
+    /* Top Brands - 3 cols per row */
+    .top-brand-container {
+        width: 94%;
+        margin: 30px auto;
+        height: auto;
+    }
+
+    .top-brand-inner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .logo1-box, .logo2-box, .logo3-box, .logo4-box, .logo5-box, .logo6-box {
+        width: calc(33.333% - 15px);
+        text-align: center;
+    }
+
+    /* Testimonials - 2 cols on Tablet */
+    .everyone-container {
+        width: 94%;
+        margin: 35px auto;
+        height: auto;
+    }
+
+    .everyone-crd {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .crd-1-eo, .crd-2-eo, .crd-3-eo, .crd-4-eo, .crd-5-eo, .crd-6-eo {
+        width: calc(50% - 10px);
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Support Team Banner */
+    .top-footer-container {
+        width: 94%;
+        margin: 30px auto;
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .text-box-expert,
+    .img-box-expert {
+        width: 100%;
+    }
+
+    .text-heading-box-expert {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .person-3 {
+        max-height: 200px;
+        margin: auto;
+    }
+
+    /* Newsletter Subscribe */
+    .subscribe-container {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .subscribe-inner {
+        width: 94%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .mail {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 440px;
+        margin: auto;
+    }
+
+    /* Footer - 2 cols on Tablet */
+    .footer-container {
+        height: auto;
+        padding: 40px 20px 20px 20px;
+    }
+
+    .footer-inner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .tromart-box, .shop-deal-box, .need-box, .contact-box {
+        width: calc(50% - 15px);
+        height: auto;
+    }
+
+    .last-footer-container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   SM: MOBILE PHONES (max-width: 640px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+    /* Hero Section */
+    .hero-container {
+        width: 100%;
+        height: auto;
+        min-height: 380px;
+        padding: 30px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    }
+
+    .shop-box {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .entertainment-heading {
+        font-size: 24px;
+        line-height: 1.25;
+        margin: 8px 0;
+    }
+
+    .sit-daim {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    /* Trust / Features Bar - 1 column stack */
+    .logo-container {
+        width: 92%;
+        margin: 15px auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+    }
+
+    .shipping, .available, .satisfied, .secure {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 8px;
+    }
+
+    .secure {
+        border-bottom: none;
+    }
+
+    /* Category Photo Tiles - 2 per row */
+    .catigery-container,
+    .catigery-inner,
+    .photo-container {
+        width: 92%;
+        margin: 15px auto;
+        height: auto !important;
+    }
+
+    .first-row-photo,
+    .second-row-photo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .air, .audio, .gadgates, .home,
+    .kitchen, .laptop, .refri, .smart {
+        width: calc(50% - 5px);
+        height: 140px;
+        border-radius: 6px;
+    }
+
+    .air-btn, .audio-btn, .gad-btn, .home-btn,
+    .kitchen-btn, .laptop-btn, .refri-btn, .smart-btn {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .air-heading, .audio-heading, .gad-heading, .home-heading,
+    .kitchen-heading, .laptop-heading, .refri-heading, .smart-heading {
+        font-size: 10px;
+    }
+
+    /* Promo Duo */
+    .shop-container {
+        width: 92%;
+        margin: 15px auto;
+        height: auto;
+    }
+
+    .shop-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+    }
+
+    .watch-box, .airbuds-box {
+        width: 100%;
+        height: 150px;
+        border-radius: 6px;
+    }
+
+    /* Universal Product Section Layouts - 1 Card Per Row on Mobile */
+    .today-deal,
+    .audio-vodeo-container,
+    .home-appliences-container,
+    .air-conditoner-container,
+    .kitchen-container,
+    .refrigerator-container,
+    .pc-container,
+    .gadget-container {
+        width: 92%;
+        margin: 25px auto;
+        height: auto;
+    }
+
+    .today-deal h1,
+    .audio-vodeo-container h1,
+    .home-btn-box h1,
+    .conditoner-btn-box h1,
+    .refrigerator-btn-box h1,
+    .pc-btn-box h1,
+    .gadget-btn-box h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .home-btn-box,
+    .conditoner-btn-box,
+    .refrigerator-btn-box,
+    .pc-btn-box,
+    .gadget-btn-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .see-btn {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+
+    .card-line-1, .card-line-2, .card-line-3,
+    .card-line-4, .card-line-5, .card-line-6,
+    .card-line-7, .card-line-8, .card-line-9 {
+        width: 100%;
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .card-1, .card-2, .card-3, .card-4-mobile,
+    .card-5, .card-6, .card-7, .card-8,
+    .card-9, .card-10, .card-11-lcd, .card-12,
+    .card-home-1, .card-home2, .card-home3, .card-home4,
+    .card-conditoner1, .card-conditoner2, .card-conditoner3-ac, .card-conditoner4,
+    .card-kitchen1, .card-kitchen2, .card-kitchen3, .card-kitchen4,
+    .card-refrigerator1, .card-refrigerator2, .card-refrigerator3, .card-refrigerator4-frej,
+    .card-pc1, .card-pc2, .card-pc3, .card-pc4,
+    .card-gadget1, .card-gadget2, .card-gadget3, .card-gadget4 {
+        width: 100% !important;
+        max-width: 360px;
+        height: auto !important;
+        margin: 0 auto 15px auto;
+    }
+
+    .crd1-img-box, .crd2-img-box, .crd3-img-box, .crd4-img-box,
+    .crd5-img-box, .crd6-img-box, .crd7-img-box, .crd8-img-box,
+    .crd9-img-box, .crd10-img-box, .crd11-img-box, .crd12-img-box,
+    .crd-home1-img-box, .crd-home2-img-box, .crd-home3-img-box, .crd-home4-img-box,
+    .crd-conditoner1-img-box, .crd-conditoner2-img-box, .crd-conditoner3-img-box, .crd-conditoner4-img-box,
+    .crd-kitchen1-img-box, .crd-kitchen2-img-box, .crd-kitchen3-img-box, .crd-kitchen4-img-box,
+    .crd-refrigerator1-img-box, .crd-refrigerator2-img-box, .crd-refrigerator3-img-box, .crd-refrigerator4-img-box,
+    .crd-pc1-img-box, .crd-pc2-img-box, .crd-pc3-img-box, .crd-pc4-img-box,
+    .crd-gadget1-img-box, .crd-gadget2-img-box, .crd-gadget3-img-box, .crd-gadget4-img-box {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        max-height: 320px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+    }
+
+    .crd1-heading, .crd2-heading, .crd3-heading, .crd4-heading,
+    .crd5-heading, .crd6-heading, .crd7-heading, .crd8-heading,
+    .crd9-heading, .crd10-heading, .crd11-heading, .crd12-heading,
+    .crd-home1-heading, .crd-home2-heading, .crd-home3-heading, .crd-home4-heading,
+    .crd-conditoner1-heading, .crd-conditoner2-heading, .conditoner3-heading, .crd-conditoner4-heading,
+    .crd-kitchen1-heading, .crd-kitchen2-heading, .kitchen3-heading, .crd-kitchen4-heading,
+    .crd-refrigerator1-heading, .crd-refrigerator2-heading, .refrigerator3-heading, .crd-refrigerator4-heading,
+    .crd-pc1-heading, .crd-pc2-heading, .pc3-heading, .crd-pc4-heading,
+    .crd-gadget1-heading, .crd-gadget2-heading, .gadget3-heading, .crd-gadget4-heading {
+        width: 100% !important;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 10px 0 4px 0;
+        height: auto !important;
+    }
+
+    .price {
+        font-size: 15px;
+        margin: 4px 0;
+    }
+
+    /* Promo Trio on Mobile */
+    .head-phone-container {
+        width: 92%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .head-phone-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+    }
+
+    .headphone, .grooming, .video-games {
+        width: 100%;
+        height: 150px;
+        border-radius: 6px;
+    }
+
+    /* Full-width Promo Banners */
+    .ordor-container,
+    .debit-container {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .ordor-container-inner,
+    .debit-container-inner {
+        width: 92%;
+        margin: auto;
+    }
+
+    .ordor-img,
+    .debit-img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 6px;
+    }
+
+    /* Save Deal */
+    .save-containere {
+        width: 92%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .save-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .save-txt-box, .save-img-box {
+        width: 100%;
+    }
+
+    .heading-save {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .washing-img {
+        width: 100% !important;
+        max-width: 320px;
+        height: auto !important;
+        margin: auto;
+        border-radius: 6px;
+    }
+
+    /* Top Brands - 2 cols on Mobile */
+    .top-brand-container {
+        width: 92%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .heading-brand {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .top-brand-inner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .logo1-box, .logo2-box, .logo3-box, .logo4-box, .logo5-box, .logo6-box {
+        width: calc(33.333% - 10px);
+        text-align: center;
+    }
+
+    .first-logo, .second-logo, .third-logo, .four-logo, .five-logo, .six-logo {
+        max-width: 80px;
+        height: auto;
+    }
+
+    /* Testimonials - 1 col on Mobile */
+    .everyone-container {
+        width: 92%;
+        margin: 25px auto;
+        height: auto;
+    }
+
+    .heading-everyone {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .everyone-crd {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .crd-1-eo, .crd-2-eo, .crd-3-eo, .crd-4-eo, .crd-5-eo, .crd-6-eo {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    /* Support Team Banner */
+    .top-footer-container {
+        width: 92%;
+        margin: 25px auto;
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 25px 15px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .text-box-expert,
+    .img-box-expert {
+        width: 100%;
+    }
+
+    .text-heading-box-expert {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .advice, .custom, .question {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding-bottom: 8px;
+    }
+
+    .question {
+        border-bottom: none;
+    }
+
+    .person-3 {
+        max-height: 180px;
+        margin: auto;
+    }
+
+    /* Newsletter */
+    .subscribe-container {
+        width: 100%;
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .subscribe-inner {
+        width: 92%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .mail {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 340px;
+        margin: auto;
+    }
+
+    .mail-form {
+        width: 100%;
+        height: 42px;
+        border-radius: 6px;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        height: 42px;
+        border-radius: 6px;
+    }
+
+    /* Footer - 1 column */
+    .footer-container {
+        height: auto;
+        padding: 30px 15px 20px 15px;
+    }
+
+    .footer-inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .tromart-box, .shop-deal-box, .need-box, .contact-box {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .tornet-logo-footer {
+        margin: 0 auto 10px auto;
+    }
+
+    .last-footer-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 15px 0 0 0;
+    }
+
+    .payment-img {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   XS: EXTRA SMALL MOBILE SCREENS (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+    .entertainment-heading {
+        font-size: 20px;
+    }
+
+    .card-1, .card-2, .card-3, .card-4-mobile,
+    .card-5, .card-6, .card-7, .card-8,
+    .card-9, .card-10, .card-11-lcd, .card-12,
+    .card-home-1, .card-home2, .card-home3, .card-home4,
+    .card-conditoner1, .card-conditoner2, .card-conditoner3-ac, .card-conditoner4,
+    .card-kitchen1, .card-kitchen2, .card-kitchen3, .card-kitchen4,
+    .card-refrigerator1, .card-refrigerator2, .card-refrigerator3, .card-refrigerator4-frej,
+    .card-pc1, .card-pc2, .card-pc3, .card-pc4,
+    .card-gadget1, .card-gadget2, .card-gadget3, .card-gadget4 {
+        max-width: 100%;
+    }
+
+    .crd1-img-box, .crd2-img-box, .crd3-img-box, .crd4-img-box,
+    .crd5-img-box, .crd6-img-box, .crd7-img-box, .crd8-img-box,
+    .crd9-img-box, .crd10-img-box, .crd11-img-box, .crd12-img-box,
+    .crd-home1-img-box, .crd-home2-img-box, .crd-home3-img-box, .crd-home4-img-box,
+    .crd-conditoner1-img-box, .crd-conditoner2-img-box, .crd-conditoner3-img-box, .crd-conditoner4-img-box,
+    .crd-kitchen1-img-box, .crd-kitchen2-img-box, .crd-kitchen3-img-box, .crd-kitchen4-img-box,
+    .crd-refrigerator1-img-box, .crd-refrigerator2-img-box, .crd-refrigerator3-img-box, .crd-refrigerator4-img-box,
+    .crd-pc1-img-box, .crd-pc2-img-box, .crd-pc3-img-box, .crd-pc4-img-box,
+    .crd-gadget1-img-box, .crd-gadget2-img-box, .crd-gadget3-img-box, .crd-gadget4-img-box {
+        max-height: 280px;
+    }
+}

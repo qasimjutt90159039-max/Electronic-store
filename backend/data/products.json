@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Multigroomer All-in-One Trimmer Series 5000, 23 Piece Mens Grooming Kit",
+    "price": 44.00,
+    "originalPrice": 49.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_130_electronic-store-product-image-27-400x400.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Smart Speaker with Alexa Voice Control Built-in Compact Size",
+    "price": 219.00,
+    "originalPrice": 249.00,
+    "category": "Audio & Video",
+    "image": "photo/imageye___-_imgi_133_electronic-store-product-image-28-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "name": "Home Speaker 500: Smart Bluetooth Speaker with Alexa Voice Control, White",
+    "price": 209.00,
+    "originalPrice": 229.00,
+    "category": "Audio & Video",
+    "image": "photo/imageye___-_imgi_136_electronic-store-product-image-29-768x768.jpg",
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Note 10 Pro 128GB 6GB RAM Factory Unlocked International Model",
+    "price": 659.00,
+    "originalPrice": 699.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_140_electronic-store-product-image-30-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "5G Unlocked Smartphone, 12GB RAM+256GB Storage 120Hz Fluid Display",
+    "price": 1199.00,
+    "originalPrice": 1299.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_143_electronic-store-product-image-31-768x768.jpg",
+    "inStock": true,
+    "rating": 5.0
+  },
+  {
+    "id": 6,
+    "name": "5G Factory Unlocked Android Cell Phone 128GB Pro-Grade Camera",
+    "price": 999.00,
+    "originalPrice": 1099.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_147_electronic-store-product-image-32-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "13 Ultrabook Gaming Laptop: Intel Core i7, NVIDIA GTX 1650 Ti",
+    "price": 1399.00,
+    "originalPrice": 1499.00,
+    "category": "PCs & Laptop",
+    "image": "photo/imageye___-_imgi_152_electronic-store-product-image-33-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 8,
+    "name": "15.6 FHD Display Laptop – Intel i7, Webcam, WiFi, Windows 11",
+    "price": 999.00,
+    "originalPrice": 1029.00,
+    "category": "PCs & Laptop",
+    "image": "photo/imageye___-_imgi_155_electronic-store-product-image-34-768x768.jpg",
+    "inStock": true,
+    "rating": 4.6
+  },
+  {
+    "id": 9,
+    "name": "Max SR Home Theater Surround Sound Bar HDMI, Wireless Subwoofer",
+    "price": 629.00,
+    "originalPrice": 679.00,
+    "category": "Audio & Video",
+    "image": "photo/imageye___-_imgi_158_electronic-store-product-image-11-768x768.jpg",
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 10,
+    "name": "V-Series 5.1 Home Theater Sound Bar with Dolby Audio, Bluetooth",
+    "price": 749.00,
+    "originalPrice": 799.00,
+    "category": "Audio & Video",
+    "image": "photo/imageye___-_imgi_161_electronic-store-product-image-12-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "name": "OLED C1 Series 55 4K Smart TV 120Hz Dolby Cinema Gaming Mode",
+    "price": 1249.00,
+    "originalPrice": 1399.00,
+    "category": "Audio & Video",
+    "image": "photo/imageye___-_imgi_164_electronic-store-product-image-14-768x768.jpg",
+    "inStock": true,
+    "rating": 5.0
+  },
+  {
+    "id": 12,
+    "name": "X80J 55 Inch TV: 4K Ultra HD LED Smart Google TV Dolby Vision HDR",
+    "price": 1329.00,
+    "originalPrice": 1449.00,
+    "category": "Audio & Video",
+    "image": "photo/imageye___-_imgi_167_electronic-store-product-image-15-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 13,
+    "name": "Air Conditioner 5000 BTU, Efficient Cooling for Bedrooms",
+    "price": 139.00,
+    "originalPrice": 159.00,
+    "category": "Air Conditioner",
+    "image": "photo/imageye___-_imgi_182_electronic-store-product-image-17-768x768.jpg",
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 14,
+    "name": "Dual Hose Portable Air Conditioner, Dehumidifier, Fan with Carbon Filter",
+    "price": 149.00,
+    "originalPrice": 179.00,
+    "category": "Air Conditioner",
+    "image": "photo/imageye___-_imgi_185_electronic-store-product-image-18-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 15,
+    "name": "Star 9,500 BTU 115V Dual Inverter Window Air Conditioner Wi-Fi",
+    "price": 199.00,
+    "originalPrice": 229.00,
+    "category": "Air Conditioner",
+    "image": "photo/imageye___-_imgi_188_electronic-store-product-image-19-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 16,
+    "name": "BTU 115V Window-Mounted Air Conditioner with Remote Control White",
+    "price": 179.00,
+    "originalPrice": 199.00,
+    "category": "Air Conditioner",
+    "image": "photo/imageye___-_imgi_191_electronic-store-product-image-20-768x768.jpg",
+    "inStock": true,
+    "rating": 4.6
+  },
+  {
+    "id": 17,
+    "name": "0.9 Cubic Feet Capacity 900 Watts Kitchen Essentials Countertop",
+    "price": 559.00,
+    "originalPrice": 599.00,
+    "category": "Kitchen Appliances",
+    "image": "photo/imageye___-_imgi_218_electronic-store-product-image-13-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 18,
+    "name": "Microwave Oven with Smart Sensor Easy Clean Interior ECO Mode 1.2 Cu Ft",
+    "price": 509.00,
+    "originalPrice": 529.00,
+    "category": "Kitchen Appliances",
+    "image": "photo/imageye___-_imgi_222_electronic-store-product-image-21-768x768.jpg",
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 19,
+    "name": "Double Door Mini Fridge with Freezer for Office or Dorm Glass Shelves",
+    "price": 479.00,
+    "originalPrice": 519.00,
+    "category": "Refrigerator",
+    "image": "photo/imageye___-_imgi_225_electronic-store-product-image-22-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 20,
+    "name": "36 Side-by-Side Refrigerator and Freezer 25 Cu Ft Capacity, Black",
+    "price": 749.00,
+    "originalPrice": 799.00,
+    "category": "Refrigerator",
+    "image": "photo/imageye___-_imgi_228_electronic-store-product-image-23-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 21,
+    "name": "Mini Fridge with Freezer for Bedroom Office Dorm Compact Refrigerator",
+    "price": 449.00,
+    "originalPrice": 499.00,
+    "category": "Refrigerator",
+    "image": "photo/imageye___-_imgi_276_electronic-store-product-image-1-768x768.jpg",
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 22,
+    "name": "2 Door Apartment Size Refrigerator with Freezer, 7.2 cu ft Stainless Steel",
+    "price": 849.00,
+    "originalPrice": 899.00,
+    "category": "Refrigerator",
+    "image": "photo/imageye___-_imgi_298_electronic-store-product-image-5-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 23,
+    "name": "14 FHD Ultrabook Intel i7 10th Gen 1 TB SSD 16GB RAM Windows 11 Pro",
+    "price": 1099.00,
+    "originalPrice": 1199.00,
+    "category": "PCs & Laptop",
+    "image": "photo/imageye___-_imgi_310_electronic-store-product-image-44-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 24,
+    "name": "15.6 Rugged Ultrabook 4K UHD Intel Core i7 32GB RAM 1TB SSD Carbon Gray",
+    "price": 799.00,
+    "originalPrice": 899.00,
+    "category": "PCs & Laptop",
+    "image": "photo/imageye___-_imgi_313_electronic-store-product-image-45-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 25,
+    "name": "Mirrorless Vlogging Camera Polaroid Kit with EF-M 15-45mm Lens Black",
+    "price": 599.00,
+    "originalPrice": 649.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_325_electronic-store-product-image-40-768x768.jpg",
+    "inStock": true,
+    "rating": 4.8
+  },
+  {
+    "id": 26,
+    "name": "4K Digital Camera 12-32mm and 45-150mm Lens Bundle 16MP 5 Axis Dual IS",
+    "price": 799.00,
+    "originalPrice": 849.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_328_electronic-store-product-image-41-768x768.jpg",
+    "inStock": true,
+    "rating": 4.9
+  },
+  {
+    "id": 27,
+    "name": "Android Tablet 10.5 LCD Screen 64GB Storage Long-Lasting Battery",
+    "price": 599.00,
+    "originalPrice": 649.00,
+    "category": "Gadgets",
+    "image": "photo/imageye___-_imgi_331_electronic-store-product-image-43-768x768.jpg",
+    "inStock": true,
+    "rating": 4.7
+  },
+  {
+    "id": 28,
+    "name": "75-Inch Class Neo QLED QN90A Series 4K UHD Quantum HDR Smart TV",
+    "price": 1629.00,
+    "originalPrice": 1749.00,
+    "category": "Audio & Video",
+    "image": "audio-photo/imageye___-_imgi_16_electronic-store-product-image-42-768x768.jpg",
+    "inStock": true,
+    "rating": 5.0
+  }
+]
