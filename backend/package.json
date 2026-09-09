@@ -1,0 +1,17 @@
+{
+  "name": "electronic-store-backend",
+  "version": "1.0.0",
+  "description": "Full-stack backend server and REST API for Electronic Store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "electronic-store",
+    "backend",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC"
+}

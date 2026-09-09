@@ -1,0 +1,5 @@
+# Exclude backend and node server files from Vercel CDN deployment
+backend/
+package.json
+server.js
+api/

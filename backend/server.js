@@ -1,6 +1,7 @@
 /**
  * Electronic Store - Full Backend Server & REST API
  * Built with pure Node.js (Zero external dependencies)
+ * Run locally: node backend/server.js
  */
 
 const http = require('http');
@@ -9,8 +10,8 @@ const path = require('path');
 const url = require('url');
 
 const PORT = process.env.PORT || 5000;
-const PUBLIC_DIR = __dirname;
-const DATA_DIR = path.join(__dirname, 'backend', 'data');
+const PUBLIC_DIR = path.join(__dirname, '..');
+const DATA_DIR = path.join(__dirname, 'data');
 
 // MIME types dictionary
 const MIME_TYPES = {
@@ -31,16 +32,16 @@ const MIME_TYPES = {
   '.ttf': 'font/ttf'
 };
 
-// In-memory store fallback for read-only environments (e.g. Vercel Serverless)
+// In-memory store fallback
 const memoryStore = {};
 
-// Helper to ensure data directory exists (safe for read-only environments)
+// Helper to ensure data directory exists
 try {
   if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
   }
 } catch (e) {
-  // Read-only filesystem on Vercel / serverless environment - ignore safely
+  // Read-only filesystem safe
 }
 
 // Data store helpers
@@ -74,7 +75,6 @@ function writeData(filename, data) {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
     return true;
   } catch (err) {
-    // In serverless / read-only filesystem, memoryStore maintains latest state
     return true;
   }
 }
@@ -113,7 +113,7 @@ function parseRequestBody(req) {
   });
 }
 
-// Main Request Handler (Works for both Standalone Server and Serverless Functions)
+// Main Request Handler
 async function handleRequest(req, res) {
   // CORS Preflight
   if (req.method === 'OPTIONS') {
@@ -409,8 +409,8 @@ async function handleRequest(req, res) {
   });
 }
 
-// Start Server locally when executed directly with `node server.js`
-if (require.main === module && !process.env.VERCEL) {
+// Start Server locally when executed directly with `node backend/server.js`
+if (require.main === module) {
   const server = http.createServer(handleRequest);
   server.listen(PORT, () => {
     console.log('========================================================');
@@ -422,5 +422,4 @@ if (require.main === module && !process.env.VERCEL) {
   });
 }
 
-// Export handler for Vercel Serverless Functions
 module.exports = handleRequest;
