@@ -31,35 +31,51 @@ const MIME_TYPES = {
   '.ttf': 'font/ttf'
 };
 
-// Helper to ensure data directory exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+// In-memory store fallback for read-only environments (e.g. Vercel Serverless)
+const memoryStore = {};
+
+// Helper to ensure data directory exists (safe for read-only environments)
+try {
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+} catch (e) {
+  // Read-only filesystem on Vercel / serverless environment - ignore safely
 }
 
 // Data store helpers
 function readData(filename, fallback = []) {
+  if (memoryStore[filename]) {
+    return memoryStore[filename];
+  }
   try {
     const filePath = path.join(DATA_DIR, filename);
     if (!fs.existsSync(filePath)) {
-      fs.writeFileSync(filePath, JSON.stringify(fallback, null, 2), 'utf-8');
+      try {
+        fs.writeFileSync(filePath, JSON.stringify(fallback, null, 2), 'utf-8');
+      } catch (_) {}
+      memoryStore[filename] = fallback;
       return fallback;
     }
     const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content || '[]');
+    const parsed = JSON.parse(content || '[]');
+    memoryStore[filename] = parsed;
+    return parsed;
   } catch (err) {
     console.error(`Error reading ${filename}:`, err.message);
-    return fallback;
+    return memoryStore[filename] || fallback;
   }
 }
 
 function writeData(filename, data) {
+  memoryStore[filename] = data;
   try {
     const filePath = path.join(DATA_DIR, filename);
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
     return true;
   } catch (err) {
-    console.error(`Error writing ${filename}:`, err.message);
-    return false;
+    // In serverless / read-only filesystem, memoryStore maintains latest state
+    return true;
   }
 }
 
@@ -97,8 +113,8 @@ function parseRequestBody(req) {
   });
 }
 
-// Create HTTP Server
-const server = http.createServer(async (req, res) => {
+// Main Request Handler (Works for both Standalone Server and Serverless Functions)
+async function handleRequest(req, res) {
   // CORS Preflight
   if (req.method === 'OPTIONS') {
     res.writeHead(204, {
@@ -391,14 +407,20 @@ const server = http.createServer(async (req, res) => {
     });
     fs.createReadStream(filePath).pipe(res);
   });
-});
+}
 
-// Start Server
-server.listen(PORT, () => {
-  console.log('========================================================');
-  console.log(`🚀 Electronic Store Server is running!`);
-  console.log(`📍 Web URL: http://localhost:${PORT}/home.html`);
-  console.log(`🔌 API Base: http://localhost:${PORT}/api/products`);
-  console.log(`💾 Data stored in: ${DATA_DIR}`);
-  console.log('========================================================');
-});
+// Start Server locally when executed directly with `node server.js`
+if (require.main === module) {
+  const server = http.createServer(handleRequest);
+  server.listen(PORT, () => {
+    console.log('========================================================');
+    console.log(`🚀 Electronic Store Server is running!`);
+    console.log(`📍 Web URL: http://localhost:${PORT}/home.html`);
+    console.log(`🔌 API Base: http://localhost:${PORT}/api/products`);
+    console.log(`💾 Data stored in: ${DATA_DIR}`);
+    console.log('========================================================');
+  });
+}
+
+// Export handler for Vercel Serverless Functions
+module.exports = handleRequest;
