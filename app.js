@@ -234,10 +234,10 @@
           <div class="es-contact-info-block" style="margin-bottom:16px;">
             <div style="margin-bottom:5px;"><strong>🏢 Official Brand:</strong> Tronmart Electronic Store Ltd.</div>
             <div style="margin-bottom:5px;"><strong>📍 Headquarters:</strong> Tronmart Plaza, 123 Fifth Avenue, Suite 800, New York, NY 10010</div>
-            <div style="margin-bottom:5px;"><strong>📞 Toll-Free Helpline:</strong> +1 (800) 234-5678 &nbsp;|&nbsp; 1-800-TRONMART</div>
-            <div style="margin-bottom:5px;"><strong>💬 WhatsApp Live:</strong> +1 (555) 234-5678 (Instant Assistance)</div>
-            <div style="margin-bottom:5px;"><strong>✉️ Customer Support:</strong> <span style="color:#00e5ff;">support@electronicstore.com</span></div>
-            <div style="margin-bottom:5px;"><strong>✉️ Orders & Billing:</strong> <span style="color:#00e5ff;">orders@electronicstore.com</span></div>
+            <div style="margin-bottom:5px;"><strong>📞 Toll-Free Helpline:</strong> +1 888 349 4296</div>
+            <div style="margin-bottom:5px;"><strong>💬 WhatsApp Live:</strong> +1 888 349 4296 (Instant Assistance)</div>
+            <div style="margin-bottom:5px;"><strong>✉️ Customer Support:</strong> <span style="color:#00e5ff;">info@electronicworldusa.com</span></div>
+            <div style="margin-bottom:5px;"><strong>✉️ Orders & Billing:</strong> <span style="color:#00e5ff;">info@electronicworldusa.com</span></div>
             <div><strong>🕒 Operating Hours:</strong> 24/7 Online Support (Live response within 15 mins)</div>
           </div>
 
